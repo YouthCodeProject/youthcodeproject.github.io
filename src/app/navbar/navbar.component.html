@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="favicon.ico" width="30" height="30"/> YouthCode Project
+  </a>
+
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse show" [ngClass]="{ 'show': displayNavbar }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkClass="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/repos" routerLinkClass="active">Repositories</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/events" routerLinkClass="active">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" routerLinkClass="active">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

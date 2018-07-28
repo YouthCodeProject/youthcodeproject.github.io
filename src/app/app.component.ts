@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  showNavbar = false;
+
+  toggleNavbar() {
+    this.showNavbar = !this.showNavbar;
+  }
 }

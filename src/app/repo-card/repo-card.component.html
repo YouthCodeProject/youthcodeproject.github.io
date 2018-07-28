@@ -1,0 +1,12 @@
+<div class="card" style="margin-bottom: 10px;">
+  <div class="card-body">
+    <h5 class="card-title"><a href="{{repo.html_url}}">{{repo.full_name}}</a></h5>
+    <p class="card-text">{{repo.description}}</p>
+    <div *ngIf="repo.license">
+      <fa-icon [icon]="faBalanceScale"></fa-icon> {{repo.license.spdx_id}}
+    </div>
+    <div class="badge badge-primary" *ngIf="repo.language">
+      {{repo.language}}
+    </div>
+  </div>
+</div>
