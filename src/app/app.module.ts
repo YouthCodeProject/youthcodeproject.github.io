@@ -15,6 +15,7 @@ import { EventListComponent } from './event-list/event-list.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { MessengerChatboxComponent } from './messenger-chatbox/messenger-chatbox.component';
 import { FooterComponent } from './footer/footer.component';
+import { FacebookPagePluginComponent } from './facebook-page-plugin/facebook-page-plugin.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     EventListComponent,
     EventDetailComponent,
     MessengerChatboxComponent,
-    FooterComponent
+    FooterComponent,
+    FacebookPagePluginComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
