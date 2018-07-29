@@ -14,6 +14,7 @@ import { RepoListComponent } from './repo-list/repo-list.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { MessengerChatboxComponent } from './messenger-chatbox/messenger-chatbox.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     RepoListComponent,
     EventListComponent,
     EventDetailComponent,
-    MessengerChatboxComponent
+    MessengerChatboxComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
