@@ -1,3 +1,12 @@
-<p>
-  event-card works!
-</p>
+<div class="card" style="margin-bottom: 10px; height: 480px; max-height: 480px;">
+  <img class="card-img-top" src="{{event.cover.source}}" style="max-width: 100%;" />
+  <div class="card-body">
+    <h5 class="card-title">{{event.name}}</h5>
+    <p class="card-text">{{event.description.slice(0, 250)}}...
+      <a href="https://facebook.com/{{event.id}}" target="_blank">See more</a>
+    </p>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">{{ event.end_time | date: 'dd/MM/yyyy' }}</small>
+  </div>
+</div>
