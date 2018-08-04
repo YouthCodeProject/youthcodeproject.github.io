@@ -2,7 +2,5 @@
     <h2>Projects</h2>
     <br />
     <h4>GitHub repositories</h4>
-    <div *ngFor="let repo of repositories">
-        <app-repo-card [repo]="repo"></app-repo-card>
-    </div>
+    <app-repo-card *ngFor="let repo of repositories" [repo]="repo"></app-repo-card>
 </div>
